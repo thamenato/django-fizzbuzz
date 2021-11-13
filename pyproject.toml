@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-fizzbuzz"
+version = "0.1.0"
+description = "Using Django REST framework for fizzbuzz objects"
+authors = ["Thales Menato <thales@thamenato.dev>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.9"
+djangorestframework = "^3.12.4"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^21.10b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -4,8 +4,8 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from fizzbuzz import views
 
 urlpatterns = [
-    path("fizzbuzz/", views.FizzbuzzList.as_view()),
-    path("fizzbuzz/<int:pk>/", views.FizzbuzzGetDetails.as_view()),
+    path("fizzbuzz/", views.get_post_fizzbuzz, name="get_post_fizzbuzz"),
+    path("fizzbuzz/<int:pk>/", views.get_fizzbuzz_details, name="get_fizzbuzz_details"),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

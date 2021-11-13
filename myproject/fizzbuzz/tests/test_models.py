@@ -1,6 +1,6 @@
 import datetime
-from django.test import TestCase
 
+from django.test import TestCase
 from fizzbuzz.models import Fizzbuzz
 
 

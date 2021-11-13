@@ -1,7 +1,6 @@
 from django.urls import path
-from rest_framework.urlpatterns import format_suffix_patterns
-
 from fizzbuzz import views
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path("fizzbuzz/", views.get_post_fizzbuzz, name="get_post_fizzbuzz"),

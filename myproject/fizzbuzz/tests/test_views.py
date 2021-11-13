@@ -1,9 +1,10 @@
-from django.test import TestCase, Client
+import json
+
+from django.test import Client, TestCase
 from django.urls.base import reverse
-from rest_framework import status
 from fizzbuzz.models import Fizzbuzz
 from fizzbuzz.serializers import FizzbuzzSerializer
-import json
+from rest_framework import status
 
 client = Client()
 

@@ -7,20 +7,19 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Fizzbuzz',
+            name="Fizzbuzz",
             fields=[
-                ('fizzbuzz_id', models.AutoField(primary_key=True, serialize=False)),
-                ('useragent', models.TextField()),
-                ('creation_date', models.DateTimeField(auto_now_add=True)),
-                ('message', models.TextField()),
+                ("fizzbuzz_id", models.AutoField(primary_key=True, serialize=False)),
+                ("useragent", models.TextField()),
+                ("creation_date", models.DateTimeField(auto_now_add=True)),
+                ("message", models.TextField()),
             ],
             options={
-                'ordering': ['fizzbuzz_id'],
+                "ordering": ["fizzbuzz_id"],
             },
         ),
     ]

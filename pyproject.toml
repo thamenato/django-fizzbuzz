@@ -11,7 +11,31 @@ djangorestframework = "^3.12.4"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^21.10b0", allow-prereleases = true}
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+autoflake = "^1.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
